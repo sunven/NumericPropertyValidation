@@ -1,0 +1,11 @@
+﻿@using System.Web.Mvc.Html
+@model NumericPropertyValidation.Models.Employee
+
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm())
+{ 
+    @Html.EditorForModel()
+    <input type="submit" value="保存" />
+}
